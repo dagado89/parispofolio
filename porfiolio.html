@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>MY PORFOLIO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Work+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--
+  ============================================================================
+  HOW TO EDIT THIS SITE
+  ============================================================================
+  Two files: index.html (this file, all the content) and styles.css (all
+  the design). Keep them in the same folder — index.html links to
+  styles.css by filename.
+
+  Three pages, one HTML file: Home, Projects, About. Navigation swaps
+  which <section class="page"> is visible — there's no server, so it all
+  still works as static files you can open directly or host anywhere.
+
+  Everything you should replace is wrapped in square brackets, e.g.
+  [Your Name] or [Project Name]. Search for "[" to find them all.
+
+  Structural labels ("Selected Work", "Get In Touch", capability names)
+  are template copy — keep, reword, or remove them as you like.
+
+  Image placeholders are the grey ".tile" boxes with a thin line-drawing
+  icon. Swap a tile's background for a real photo like this:
+    <div class="tile" style="background-image:url('your-image.jpg')"></div>
+  (this removes the placeholder icon and label automatically — add
+  background-size:cover;background-position:center too)
+
+  To add or remove a project, copy/paste one <article class="proj"> block
+  inside #page-projects and edit its contents.
+  ============================================================================
+-->
+
+<!-- ============================== NAV ============================== -->
+<nav class="nav">
+  <a class="nav-mark" href="#home" data-page-link="home">KONTCHUPE NGANDEU VALADAREZ PARIS</a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" data-page-link="home">Home</a></li>
+    <li><a href="#projects" data-page-link="projects">Projects</a></li>
+    <li><a href="#about" data-page-link="about">About</a></li>
+    <span class="nav-indicator" id="navIndicator"></span>
+  </ul>
+</nav>
+
+<!-- ============================== HOME ============================== -->
+<section class="page" id="page-home">
+  <div class="page-inner">
+    <div class="wrap page-anim">
+      <div class="page-mark">
+        <span class="bracket"><span></span><span></span></span>
+        <span class="eyebrow">01 — Home</span>
+      </div>
+
+      <h1 class="page-title">NEW<br>VISION</h1>
+      <div class="hero-role"> COMPUTER SCIENCE</div>
+      <p class="hero-strap"><div>Computer science student</div></p>
+
+      <div class="btn-row">
+        <a class="btn" href="#projects" data-page-link="projects">View Projects <span class="arrow">→</span></a>
+        <a class="btn" href="#about" data-page-link="about">About Me <span class="arrow">→</span></a>
+      </div> 
+      
+      
+</section>
+
+<!-- ============================== PROJECTS ============================== -->
+<section class="page" id="page-projects">
+  <div class="page-inner">
+    <div class="wrap page-anim">
+      <div class="page-mark">
+        <span class="bracket"><span></span><span></span></span>
+        <span class="eyebrow">02 — Projects</span>
+      </div>
+      <h1 class="page-title">Selected Work</h1>
+      <p class="page-intro">[New Vision – An AI-powered platform designed to reduce unemployment by connecting students, trainers, workers, employers, businesses, and customers while providing training, job opportunities, business promotion, matching, and secure payments.
+Tourism Platform – A website/app that helps users discover places based on their location, interests, available time, and budget.
+University Inventory System – A digital system for the university’s Sustainable Services department to track tools, equipment, users, availability, and maintenance.
+AI & App Development – Projects focused on learning how to build Flutter, web, and AI-powered applications, including authentication, profiles, jobs, chat, notifications, and AI assistance.
+Web Development Projects – Practical projects using HTML, CSS, and JavaScript to build and style websites.
+Business & Academic Projects – Projects involving Business Model Canvas, marketing, investment, presentations, research, and academic writing.]</p>
+
+      <div class="proj-grid">
+
+        <!-- featured project, wider layout 
+        <article class="proj span2 reveal">
+          <div class="proj-inner">
+            <div class="tile">
+              <svg viewBox="0 0 100 100" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M0 70 L30 40 L55 60 L100 20 L100 100 L0 100 Z"/><circle cx="80" cy="24" r="7"/></svg>
+              <span class="tile-label">[Add project screenshot]</span>
+            </div>
+            <div>
+              <h3>[Project Name]</h3>
+              <div class="proj-meta">
+                <span>[Client / Company]</span><span>·</span>
+                <span>[Location / Remote]</span><span>·</span>
+                <span>[Month Year]</span>
+              </div>
+              <p class="proj-desc">[One to two sentences: the problem, your role, the outcome. What made this project worth featuring first?]</p>
+              <div class="tags">
+                <span>[React]</span><span>[Node]</span><span>[PostgreSQL]</span>
+              </div>
+              <div class="proj-links">
+                <a href="#">[Live ↗]</a>
+                <a href="#">[Code ↗]</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- repeatable project card — duplicate this block for each additional project -->
+        <article class="proj reveal">
+          <div class="tile">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M0 76 L34 46 L58 66 L100 30"/></svg>
+            <span class="tile-label"><img src="work.png" alt="photo"></span>
+          </div>
+          <h3>[NEW VISION]</h3>
+          <div class="proj-meta"><span>[Client / Company]</span><span>·</span><span><div>Incomplet</div></span></div>
+          <p class="proj-desc">[An AI-powered platform designed to reduce unemployment by connecting students, trainers, workers, employers, businesses, and customers while providing training, job opportunities, business promotion, matching, and secure payments.]</p>
+          <div class="tags"><span>[Tech]</span><span>[Tech]</span></div>
+        </article>
+
+        <article
+  class="proj reveal">
+          <div class="tile">
+            <span class="tile-label"><img src="tourist.png" alt="photo" width="600" height="250"></span>
+          </div>
+          <h3>[Tourism Platform]</h3>
+          <div class="proj-meta"><span>[Client / Company]</span><span>·</span><span>[Incomplete]</span></div>
+          <p class="proj-desc">[A website/app that helps users discover places based on their location, interests, available time, and budget..]</p>
+          <div class="tags"><span>[Tech]</span><span>[Tech]</span></div>
+        </article>
+
+
+        <article class="proj reveal">
+          <div class="tile">
+            <svg viewBox="0 0 100 100" preserveAspectRatio="none" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M0 78 L28 46 L46 64 L66 34 L100 78 Z"/></svg>
+            <span class="tile-label"><img src="web.png" alt="photo"></span>
+          </div>
+          <h3>[web development ]</h3>
+          <div class="proj-meta"><span>[Client / Company]</span><span>·</span><span>[Month Year]</span></div>
+          <p class="proj-desc">[Practical projects using HTML, CSS, and JavaScript to build and style websites.]</p>
+          <div class="tags"><span>[Tech]</span><span>[Tech]</span></div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== ABOUT ============================== -->
+<section class="page" id="page-about">
+  <div class="page-inner">
+    <div class="wrap page-anim">
+      <div class="page-mark">
+        <span class="bracket"><span></span><span></span></span>
+        <span class="eyebrow">03 — About</span>
+      </div>
+      <h1 class="page-title">About Me</h1>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p>[My name is KONTCHUPE NGANDEU VALADAREZ PARIS i were born in cameroon, Douala on the 10 of December 2008. I did my primary school in GHS farandole then my
+            secondary school in DUVAAL college, finally I extended my current study in ghana(lancaster univerty)where i started in foundation were i have choose computer science as my course to study 
+            I am an Entrepreneurial thinker, i have develop many ideas on app and business my biggest idea was new vision .]</p>
+          <p>[.]</p>
+
+          <div class="contact-block">
+            <div class="contact-row"><span class="k">Phone</span><span>[+233 O555595218]</span></div>
+            <div class="contact-row"><span class="k">Email</span><span><a href="paris:you@example.com">[parisvaladars@icloud.com]</a></span></div>
+            <div class="contact-row"><span class="k">Based in</span><span>[ACCRA, GHANA]</span></div>
+          </div>
+        </div>
+
+
+
+      
+
+      <hr class="divider">
+
+      <div class="statement reveal">
+        <h2>[Trust GOD and it Process.]</h2>
+      </div>
+
+      <hr class="divider">
+
+      <div class="closing reveal">
+        <a class="big-link" href="PARIS:you@example.com">[Parisvaladars@icloud.com]</a>
+        <div class="closing-meta">
+          <div>
+            <h4>Based In</h4>
+            <p>[ACCRA, GHANA]</p>
+          </div>
+          <div>
+            <h4>Elsewhere</h4>
+            <p><a href="#">[GitHub]</a> · <a href="#">[LinkedIn]</a> · <a href="#">[Twitter/X]</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== GLOBAL FOOTER ============================== -->
+<footer class="site-foot">
+  <span class="mono">© [2026] [KONTCHUPE NGANDEU V.P]</span>
+  <span><a href="#">[GitHub]</a> · <a href="#">[LinkedIn]</a> · <a href="#">[Twitter/X]</a></span>
+</footer>
+
+<script>
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var pages = {
+    home: document.getElementById('page-home'),
+    projects: document.getElementById('page-projects'),
+    about: document.getElementById('page-about')
+  };
+  var navLinksList = document.getElementById('navLinks');
+  var indicator = document.getElementById('navIndicator');
+  var allLinks = document.querySelectorAll('[data-page-link]');
+  var current = null;
+
+  function moveIndicator(id){
+    var link = navLinksList.querySelector('a[data-page-link="' + id + '"]');
+    if (!link || !indicator) return;
+    var lr = link.getBoundingClientRect();
+    var pr = navLinksList.getBoundingClientRect();
+    indicator.style.width = lr.width + 'px';
+    indicator.style.left = (lr.left - pr.left) + 'px';
+  }
+
+  function setActiveNav(id){
+    navLinksList.querySelectorAll('a').forEach(function(a){
+      a.classList.toggle('active', a.getAttribute('data-page-link') === id);
+    });
+    moveIndicator(id);
+  }
+
+  function showPage(id){
+    if (!pages[id]) id = 'home';
+    if (id === current) return;
+    var next = pages[id];
+    var prevId = current;
+    current = id;
+    setActiveNav(id);
+    history.replaceState(null, '', '#' + id);
+
+    if (reduced || !prevId) {
+      if (prevId) { pages[prevId].classList.remove('active'); pages[prevId].style.display = 'none'; }
+      next.style.display = 'block';
+      requestAnimationFrame(function(){ next.classList.add('active'); });
+      window.scrollTo(0, 0);
+      return;
+    }
+
+    var prev = pages[prevId];
+    prev.classList.remove('active');
+    setTimeout(function(){
+      prev.style.display = 'none';
+      next.style.display = 'block';
+      window.scrollTo(0, 0);
+      next.offsetHeight; /* force reflow */
+      requestAnimationFrame(function(){ next.classList.add('active'); });
+    }, 260);
+  }
+
+  allLinks.forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault();
+      showPage(a.getAttribute('data-page-link'));
+    });
+  });
+
+  window.addEventListener('hashchange', function(){
+    showPage(location.hash.replace('#', '') || 'home');
+  });
+
+  window.addEventListener('resize', function(){
+    if (current) moveIndicator(current);
+  });
+
+  /* scroll-reveal within a page */
+  var reveals = document.querySelectorAll('.reveal');
+  if (reduced) {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    reveals.forEach(function(el){ io.observe(el); });
+  }
+
+  /* init from hash (supports direct links / back-forward) */
+  showPage(location.hash.replace('#', '') || 'home');
+</script>
+</body>
+</html>
